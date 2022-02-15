@@ -12,7 +12,7 @@ function SectionFooter() {
                     <ul>
                         <div className="f-title logo">
                             <img src={logo} alt="" />
-                            <h4>JobsFndr</h4>
+                            <h4>TechJobs</h4>
                         </div>
                         <p className="f-text">
                             Lorem ipsum dolor sit,<br />
@@ -76,7 +76,7 @@ function SectionFooter() {
                     <ul>
                         <h4 className="f-title">Our Products</h4>
                         <li className="nav-item">
-                            <a href="#">Job Finder</a>
+                            <a href="#">Tech-Jobs</a>
                         </li>
                         <li className="nav-item">
                             <a href="#">Notes App</a>
@@ -94,7 +94,7 @@ function SectionFooter() {
                 </div>
             </InnerLayout>
             <p className="footer">
-                © 2022 <span>JobsFndr</span> Inc. All Rights Reserved.
+                &copy; {new Date().getFullYear()} <span>TechJobs</span> Inc. All Rights Reserved.
             </p>
         </SectionFooterStyled>
     )

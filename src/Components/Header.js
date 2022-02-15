@@ -1,6 +1,7 @@
 import React, { useState, useEffect } from 'react'
 import logo from '../img/logo1.svg';
 import search from '../img/search.svg';
+/*eslint-disable*/
 
 import { HeaderStyled } from './HeaderStyles';
 
@@ -53,7 +54,7 @@ const Header = () => {
                     You can choose your dream job
                 </h1>
                 <p className='main-para'>
-                    Find great job for build your bright career. Have many job in this platform
+                    Find great jobs to build your bright career. Find the right job vacancies
                 </p>
                 <div className="input-control">
                     <input type="text" placeholder='Job Title or Keywords' />

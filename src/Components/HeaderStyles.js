@@ -2,20 +2,20 @@ import styled from 'styled-components';
 import hero from '../img/hero.jpg';
 
 export const HeaderStyled = styled.header`
-    min-height: 90vh;
+    min-height: 95vh;
     background: linear-gradient(to top, rgba(0,0,0, 0.2), rgba(0,0,0, 0.5)), url(${hero}) no-repeat;
     background-size: cover;
     .navigation {
-        background: ${({ scrollNav}) => scrollNav ? '#eee' : 'transparent'};
-        border-bottom: .5px solid #f4f7f773;
-        position: sticky;
+        background: ${({ scrollNav}) => scrollNav ? '#eee' : '#27AE69'};
+        position: fixed;
         top: 0;
         right: 0;
         left: 0;
         z-index: 10;
+        width: 100%;
 
         .nav-wrapper{
-            margin: 0 20rem;
+            margin: 0 10rem;
             display: flex;
             justify-content: space-between;
             align-items: center;
@@ -46,6 +46,7 @@ export const HeaderStyled = styled.header`
             padding: 1rem 1.7rem;
             border-radius: 7px;
             text-align: center;
+            box-shadow: 6px 6px 15px 5px rgba(0,0,0, 0.2);
         }
     }
 
@@ -81,6 +82,7 @@ export const HeaderStyled = styled.header`
         .input-control{
             display: flex;
             justify-content: center;
+            flex-direction: row;
             width: 100%;
             input, select{
                 background-color: var(--color-white);
@@ -98,6 +100,8 @@ export const HeaderStyled = styled.header`
             input[type='text']::placeholder{
                 color: #a1a1a1;
             }
+
+            
         }
 
         .search-btn{
@@ -122,6 +126,17 @@ export const HeaderStyled = styled.header`
     @media screen and (min-width: 1025px) {
         .nav-items{
             display: flex !important;
+        }
+    }
+    @media screen and (max-width: 768px) {
+        .input-control{
+            flex-direction: column !important;
+            width: 100%;
+            gap: 1rem;
+
+            input, select {
+                width: 100% !important;
+            }
         }
     }
 `;
